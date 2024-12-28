@@ -449,3 +449,102 @@ button {
       transition: transform 0.3s ease-in-out;
        color: blueviolet;
     }
+ width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  transition: all 0.3s ease;
+}
+
+.step-icon:hover {
+  transform: rotate(360deg);
+}
+
+.fa-upload,
+.fa-search,
+.fa-check {
+  font-size: 40px;
+}
+	    .steps .container{
+	    margin:auto;
+	    }	    
+	    
+	    
+	    .demo-button {
+  background-color: #9C27B0; /* Green background */
+  border: none; /* Remove border */
+  padding: 5%; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 14px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.demo-button a {
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+}
+button {
+    background: no-repeat;
+    border: none;
+}
+
+ .count-value {
+      font-size: 48px;
+      transition: transform 0.3s ease-in-out;
+       color: blueviolet;
+    }
+
+    .count-bounce {
+      transform: scale(1.2);
+    }	    
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    
+      <div >SHERLOCK AI</div>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+       
+	    
+	 
+	       
+      </ul>
+    </div>
+  </nav>
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-4">
+	     <h2 id="welcome"></h2> <h1 class="text-center mb-4"> <strong> SHERLOCK AI, </strong> You Deserve the Truth </h1>
+     <!-- <p>Detect Deepfakes Before They Spread</p> -->
+	     <h2 style="text-align: center; color: black;">Don't Fall Victim to Deepfake Scams!</h2>
+	 <p>We Have Detected <span id="voiceCount" class="count-value">0</span> Deepfake Generated Videos</p>
+	   <p>We Protect <span id="userCount" class="count-value">0</span> Users.</p>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="card">
+        <div class="card-body text-center">
+          <div id="upload-message" style="color: red;"></div>
+          <form enctype="multipart/form-data" id="upload-form" class="form-row">
+            <div class="form-group col-12">
+              <label for="audio-file">
+                <img src="images/play.png"/ height="15%" width="15%">
+              </label>
+             
+              <div id="file-name"></div>
+            </div>
+            <div class="form-group col-12">
+		    <h6 style="color:red;  font-weight: bold; "> <span style="color:#3F51B5;">For better results: </span></br> Use audio without background music and noise.</br> remove background music with this <a href="https://vocalremover.org/">vocal remover </a> or remove noise with <a href="https://podcast.adobe.com/enhance">Adobe</a> </br></h6>
+   
